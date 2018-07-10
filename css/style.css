@@ -12,7 +12,7 @@ a {
   color: inherit;
 }
 body {
-  
+  position: relative;
 }
 
 /* common css */
@@ -25,8 +25,12 @@ body {
 /* main css */
 .topNavBar {
   margin-top: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-.topNavBar>.logo {
+.topNavBar .logo {
   display: block;
   float: left;
   font-size: 24px;
@@ -36,22 +40,22 @@ body {
   padding-bottom: 3px;  
   margin-left: 16px;
 }
-.topNavBar>.logo>.rs {
+.topNavBar .logo .rs {
   color: #e6686d;
   margin-right: 4px;
 }
-.topNavBar>.logo>.card {
+.topNavBar .logo .card {
   color: #9a9da2;
 }
-.topNavBar>nav {
+.topNavBar nav {
   padding-top: 5px;
   padding-bottom: 5px;  
 }
 
-.topNavBar>nav>ul {
-  float: right;
+.topNavBar nav ul {
+  float: right;   
 }
-.topNavBar>nav>ul>li {
+.topNavBar nav ul li {
   float: left;
   margin-left: 17px;
   margin-right: 17px;
@@ -65,7 +69,102 @@ body {
   border-bottom: 3px solid transparent;  
   border-top: 3px solid transparent;  
 }
-.topNavBar>nav>ul>li>a:hover {
+.topNavBar nav ul li a:hover {
   border-bottom-color: #e6686d;
 }
+.banner {
+  height: 515px;
+  background: url(https://i.loli.net/2018/07/10/5b43fcca8d25a.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.banner .mask {
+  height: 515px;
+  background: rgba(0,0,0,.8 )
+}
+main .userCard {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: -280px;
+  background: #fff;
+  box-shadow: 6px 15px 63px -10px rgba(0,0,0,0.75);
+}
+.userCard .picture {
+  float: left;
+  padding: 50px 0 50px 50px;
+  margin-right: 68px;
+  margin-bottom: 68px;
+}
+.userCard .text {
+  float: left;
+  margin-top: 50px;
+  width: 500px;
+}
+.userCard .text .welcome{
+  background: #e6686a;
+  color: #fff;
+  padding: 4px 16px;
+  line-height: 22px;
+  position: relative;
+}
+.userCard .text .welcome .triangle{
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  width:0px;
+  width: 0px;
+  border: 7px solid #e6686a;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.userCard .text .name {
+  margin-top: 30px;
+}
+.userCard .text .desc {
+  margin-top: 12px;
+  margin-bottom: 12px; 
+}
+.userCard dl dt {
+  float: left;
+}
+.userCard dl dt {
+  width: 30%;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+.userCard dl dd {
+  float: left;
+  width: 70%;
+  margin-top: 20px;  
+  color: #dedede;
+}
+.userCard footer.media {
+  background: #e6686a;
+  position: absolute;
+  top: 447px;
+  left: 0;
+  width: 938px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;      
+}
+.userCard footer.media a{
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.userCard footer.media a:hover{
+  background: #cf5d5f;
+}
 
+.userCard footer.media .iconfont{
+  font-size: 30px;
+  color: #fff;  
+}
