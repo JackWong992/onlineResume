@@ -25,11 +25,22 @@ body {
 
 /* main css */
 .topNavBar {
-  margin-top: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  transition: all .5s;
+}
+.topNavBar.sticky {
+  background: #fff;
+  z-index: 2;
+  color: #b7b7b7;
+  box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.53);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
 }
 .topNavBar .logo {
   display: block;
@@ -49,7 +60,7 @@ body {
   color: #9a9da2;
 }
 .topNavBar nav {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 5px;  
 }
 
@@ -67,15 +78,33 @@ body {
   display: block;
   color: #B7B7B7;
   font-weight: bold;
-  border-bottom: 3px solid transparent;  
-  border-top: 3px solid transparent;  
+  /* border-bottom: 3px solid transparent;  
+  border-top: 3px solid transparent;     */
 }
-.topNavBar nav ul li a:hover {
+/* .topNavBar nav ul li a:hover {
   border-bottom-color: #e6686d;
+} */
+.topNavBar nav ul li a.cool-link {
+  display: block;
+  text-decoration: none;
 }
+.topNavBar nav ul li a.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #e6686d;
+  transition: width .3s;
+}
+.topNavBar nav ul li a.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+
 .banner {
   height: 515px;
-  background: url(https://i.loli.net/2018/07/10/5b43fcca8d25a.jpg);
+  background: url(../img/rs-background.jpg);
   background-position: center center;
   background-size: cover;
 }
