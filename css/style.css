@@ -13,6 +13,7 @@ a {
 }
 body {
   position: relative;
+  background: #f1f1f1;
 }
 
 /* common css */
@@ -90,7 +91,7 @@ main .userCard {
   border: 1px solid #ccc;
   margin-top: -280px;
   background: #fff;
-  box-shadow: 6px 15px 63px -10px rgba(0,0,0,0.75);
+  box-shadow: 6px 15px 63px -10px rgba(0,0,0,0.3);
 }
 .userCard .picture {
   float: left;
@@ -159,6 +160,8 @@ main .userCard {
   padding: 10px;
   margin-right: 20px;
   margin-left: 20px;
+  transition: box-shadow .3s ;
+  
 }
 .userCard footer.media a:hover{
   background: #cf5d5f;
@@ -168,3 +171,81 @@ main .userCard {
   font-size: 30px;
   color: #fff;  
 }
+
+main .downloadResume-wrapper {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 36px;
+}
+main .downloadResume-wrapper .downloadResume {
+  border: 1px solid #cdcfd1;
+  display: inline-block;  
+  padding: 21px 55px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d4451;
+  border-radius: 3px;
+}
+main .downloadResume-wrapper .downloadResume:hover {
+  box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.47);
+  transition: all 1s;
+}
+main .self-introduction {
+  text-align: center;
+  line-height: 36px;
+  font-size: 18px;
+  font-family: kai;
+}
+section.profolio,
+section.skills {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.profolio h2,
+section.skills h2 {
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+section.skills  ol {
+  background: #fff;
+  padding: 42px 50px  8px; 
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+section.skills ol li{
+  float: left;
+  width: 50%;
+  padding-right: 40px;
+}
+section.skills ol li:nth-child(even){
+  padding-right: 0px;
+}
+
+section.skills  ol li h3{
+  color: #3d4451;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+section.skills .progressBar {
+  height: 5px;
+  background: #fae1e2;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+section.skills  .progressBar .progress {
+  height: 5px;
+  background: #e6686d;
+  width: 75%;
+  border-radius: 2px;  
+}
+
+
+
+
