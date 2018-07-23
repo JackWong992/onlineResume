@@ -274,6 +274,10 @@ section.skills  .progressBar .progress {
   width: 75%;
   border-radius: 2px;  
 }
+section.profolio .jobs {
+  border: 1px solid red;
+  height: 600px;
+}
 
 
 
