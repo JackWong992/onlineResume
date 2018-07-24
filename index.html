@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="site-welcome active" id="siteWelcome">
+  <div class="site-welcome active" id="siteWelcome" >
      <div class="loading" id="loading"></div> 
   </div> 
   <div class="topNavBar clearfix" id="topNavBar">
@@ -51,7 +51,7 @@
     <div class="mask"></div>
   </div>
   <main>
-    <div class="userCard clearfix" id="siteAbout">
+    <div class="userCard clearfix" id="siteAbout" data-x>
       <div class="picture">
         <img src="./img/startuper-1-299x347.jpg" alt="resumeAvatar">
       </div>
@@ -104,7 +104,7 @@
     <p class="self-introduction">黄飞龙，前端工程师，喜欢研究新的技术，热爱前端这个职业
       <br> 技能：前端开发，Node.js React.js Vue.js BootStrap </p>
   </main>
-  <section class="skills" id="siteSkills" >
+  <section class="skills" id="siteSkills"  data-x>
     <h2>技能</h2>
     <ol class="clearfix">
       <li>
@@ -145,7 +145,7 @@
       </li>
     </ol>
   </section>
-  <section class="profolio" id="siteProfolio">
+  <section class="profolio" id="siteProfolio" data-x>
     <h2>作品集</h2>
     <nav>
       <ol>
@@ -161,5 +161,6 @@
     </div>
   </section>
 </body>
+<script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
 <script src="./js/main.js"></script>
 </html>
